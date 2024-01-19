@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- Кнопка и всплывающее окно с полем для ввода -->
+    <button onclick="showPopup()">Нажми меня</button>
+
+    <script>
+      function showPopup() {
+        var userInput = prompt("Введите что-то:", "");
+        if (userInput !== null) {
+          alert("Вы ввели: " + userInput);
+        }
+      }
+    </script>
+  </body>
+</html>

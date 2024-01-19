@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Изображения с эффектом при наведении</title>
+    <style>
+      img {
+        border: none;
+        border-radius: 0;
+        transition: border-radius 0.3s, border 0.3s;
+        margin: 10px;
+      }
+
+      img:hover {
+        border-radius: 50%;
+        border: 1px solid white;
+      }
+      body {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Изображения с эффектом при наведении:</h2>
+    <img src="image1.jpg" alt="Изображение 1" />
+    <img src="image2.jpg" alt="Изображение 2" />
+    <img src="image3.jpg" alt="Изображение 3" />
+  </body>
+</html>

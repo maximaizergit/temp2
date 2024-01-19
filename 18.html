@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+  <body>
+    <!-- Форма с полями ввода и checkbox -->
+    <form>
+      <label for="firstName">Имя:</label>
+      <input type="text" id="firstName" name="firstName" required />
+
+      <label for="lastName">Фамилия:</label>
+      <input type="text" id="lastName" name="lastName" required />
+
+      <label for="group">Группа:</label>
+      <select name="group" required>
+        <option value="group1">Группа 1</option>
+        <option value="group2">Группа 2</option>
+      </select>
+
+      <label for="course">Курс:</label>
+      <select name="course" required>
+        <option value="1">1 курс</option>
+        <option value="2">2 курс</option>
+      </select>
+
+      <label
+        ><input type="checkbox" name="highGrade" /> Имеет средний балл >
+        9</label
+      >
+      <label><input type="checkbox" name="awards" /> Имеет грамоты</label>
+      <label
+        ><input type="checkbox" name="goodBehavior" /> Имеет примерное
+        поведение</label
+      >
+
+      <button type="submit">Отправить</button>
+    </form>
+  </body>
+</html>

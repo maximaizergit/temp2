@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Бегущая строка */
+      #runningText {
+        white-space: nowrap;
+        overflow: hidden;
+        animation: runText 10s linear infinite;
+        color: #3498db; /* Цвет текста по умолчанию */
+        transition: color 0.3s ease;
+      }
+
+      @keyframes runText {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      /* Изменение цвета при наведении */
+      #runningText:hover {
+        color: #e74c3c; /* Красный цвет текста */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Бегущая строка -->
+    <div id="runningText">
+      Это бегущая строка. Наведи курсор, чтобы изменить цвет.
+    </div>
+  </body>
+</html>

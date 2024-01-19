@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+  <body>
+    <!-- Форма с различными полями ввода -->
+    <form>
+      <label for="firstName">Имя:</label>
+      <input type="text" id="firstName" name="firstName" required />
+
+      <label for="lastName">Фамилия:</label>
+      <input type="text" id="lastName" name="lastName" required />
+
+      <label>Пол:</label>
+      <select name="gender" required>
+        <option value="male">Мужской</option>
+        <option value="female">Женский</option>
+      </select>
+
+      <label>Семейное положение:</label>
+      <select name="maritalStatus" required>
+        <option value="single">Холост/Не замужем</option>
+        <option value="married">Женат/Замужем</option>
+        <option value="divorced">Разведен/Разведена</option>
+      </select>
+
+      <label>Отношение к вредным привычкам:</label>
+      <label
+        ><input type="radio" name="habits" value="negative" /> Негативное</label
+      >
+      <label
+        ><input type="radio" name="habits" value="neutral" /> Нейтральное</label
+      >
+      <label
+        ><input type="radio" name="habits" value="positive" />
+        Положительное</label
+      >
+
+      <button type="submit">Отправить</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Всплывающее окно с текстом</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        margin: 30;
+      }
+
+      button {
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 15px;
+      }
+
+      #popup-container {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        animation: fadeIn 0.5s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          transform: translate(-50%, 100%);
+        }
+        to {
+          transform: translate(-50%, -50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="showPopup()">Показать всплывающее окно</button>
+    <div id="popup-container">
+      <p>Это всплывающее окно с текстом.</p>
+      <button onclick="closePopup()">Закрыть</button>
+    </div>
+
+    <script>
+      function showPopup() {
+        document.getElementById("popup-container").style.display = "block";
+      }
+
+      function closePopup() {
+        document.getElementById("popup-container").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

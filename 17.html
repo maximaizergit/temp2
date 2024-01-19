@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Анимация перемещения объекта */
+      .movingObject {
+        width: 50px;
+        height: 50px;
+        background-color: #3498db;
+        position: absolute;
+        animation: moveRight 5s linear infinite;
+        border-radius: 45px;
+      }
+
+      @keyframes moveRight {
+        0% {
+          left: 0;
+        }
+        100% {
+          left: calc(100% - 50px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Перемещаемый объект -->
+    <div class="movingObject"></div>
+  </body>
+</html>
